@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "_default": {
+      "link": "saira-app"
+    },
+    "saira-app": {
+      "applicationId": "N9nUy8d3LYbl1NrRVLrKjfscaVFE8liJpwBDA59w"
+    }
+  }
+}
