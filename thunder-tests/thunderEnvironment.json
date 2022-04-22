@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "4b393207-1716-4eaa-971e-1bff429a3d95",
+    "name": "Dev",
+    "default": true,
+    "sortNum": 10000,
+    "created": "2022-04-22T04:27:11.298Z",
+    "modified": "2022-04-22T14:08:40.695Z",
+    "data": [
+      {
+        "name": "token",
+        "value": "r:483bd43797815cc7ba3394bf6d87f5cb"
+      },
+      {
+        "name": "applicationId",
+        "value": "N9nUy8d3LYbl1NrRVLrKjfscaVFE8liJpwBDA59w"
+      },
+      {
+        "name": "restApiKey",
+        "value": "9588YgltYSzypM8ITkxVbuTTa2aMzb0LmKvjan1I"
+      }
+    ]
+  }
+]
