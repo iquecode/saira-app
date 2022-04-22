@@ -699,15 +699,15 @@
     "method": "POST",
     "sortNum": 40000,
     "created": "2022-04-22T14:02:56.319Z",
-    "modified": "2022-04-22T14:02:56.319Z",
+    "modified": "2022-04-22T14:22:47.830Z",
     "headers": [
       {
         "name": "X-Parse-Application-Id",
-        "value": "XWCUYesUVIm9gpuQxdueJR3OmQnSu1Ze2kTNQMWF"
+        "value": "{{applicationId}}"
       },
       {
         "name": "X-Parse-REST-API-Key",
-        "value": "EEyyTKAJATgxKxXDGiGkUMQxccWKlN5IVX0qpDLO"
+        "value": "{{restApiKey}}"
       },
       {
         "name": "Content-Type",
@@ -717,7 +717,7 @@
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n    \"email\": \"iquecode4@gmail.com\",\n    \"password\": \"12345678\",\n    \"fullname\": \"Henrique Finco Mariani\",\n    \"phone\": \"+5551986741020\",\n    \"cpf\": \"98637967000\"\n}",
+      "raw": "{\n    \"email\": \"iquecode@gmail.com\",\n    \"password\": \"12345678\",\n    \"fullname\": \"Henrique Finco Mariani\",\n    \"nickname\": \"ique\"\n}",
       "form": []
     },
     "tests": []
@@ -731,15 +731,15 @@
     "method": "POST",
     "sortNum": 50000,
     "created": "2022-04-22T14:02:56.320Z",
-    "modified": "2022-04-22T14:02:56.320Z",
+    "modified": "2022-04-22T15:16:30.184Z",
     "headers": [
       {
         "name": "X-Parse-Application-Id",
-        "value": "XWCUYesUVIm9gpuQxdueJR3OmQnSu1Ze2kTNQMWF"
+        "value": "{{applicationId}}"
       },
       {
         "name": "X-Parse-REST-API-Key",
-        "value": "EEyyTKAJATgxKxXDGiGkUMQxccWKlN5IVX0qpDLO"
+        "value": "{{restApiKey}}"
       },
       {
         "name": "Content-Type",
@@ -749,7 +749,7 @@
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n    \"email\": \"iquecode@gmail.com\",\n    \"password\": \"1234\"\n}",
+      "raw": "{\n    \"email\": \"iquecode@gmail.com\",\n    \"password\": \"12345678\"\n}",
       "form": []
     },
     "tests": []
@@ -763,15 +763,15 @@
     "method": "POST",
     "sortNum": 60000,
     "created": "2022-04-22T14:02:56.321Z",
-    "modified": "2022-04-22T14:02:56.321Z",
+    "modified": "2022-04-22T14:48:01.705Z",
     "headers": [
       {
         "name": "X-Parse-Application-Id",
-        "value": "XWCUYesUVIm9gpuQxdueJR3OmQnSu1Ze2kTNQMWF"
+        "value": "{{applicationId}}"
       },
       {
         "name": "X-Parse-REST-API-Key",
-        "value": "EEyyTKAJATgxKxXDGiGkUMQxccWKlN5IVX0qpDLO"
+        "value": "{{restApiKey}}"
       },
       {
         "name": "X-Parse-Session-Token",
@@ -786,29 +786,33 @@
     "colId": "ca555009-b16f-4e41-b292-d8d78f2050e4",
     "containerId": "43a62444-c4a9-4e07-922b-47daaee7a7dc",
     "name": "Change Password",
-    "url": "https://parseapi.back4app.com/functions/reset-password",
+    "url": "https://parseapi.back4app.com/functions/change-password",
     "method": "POST",
     "sortNum": 70000,
     "created": "2022-04-22T14:02:56.322Z",
-    "modified": "2022-04-22T14:02:56.322Z",
+    "modified": "2022-04-22T15:15:46.513Z",
     "headers": [
       {
         "name": "X-Parse-Application-Id",
-        "value": "XWCUYesUVIm9gpuQxdueJR3OmQnSu1Ze2kTNQMWF"
+        "value": "{{applicationId}}"
       },
       {
         "name": "X-Parse-REST-API-Key",
-        "value": "EEyyTKAJATgxKxXDGiGkUMQxccWKlN5IVX0qpDLO"
+        "value": "{{restApiKey}}"
       },
       {
         "name": "Content-Type",
         "value": "application/json"
+      },
+      {
+        "name": "X-Parse-Session-Token",
+        "value": "{{token}}"
       }
     ],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n    \"email\": \"iquecode@gmail.com\"\n}",
+      "raw": "{\n    \"email\": \"iquecode@gmail.com\",\n    \"currentPassword\": \"1234\",\n    \"newPassword\": \"12345678\"\n}",
       "form": []
     },
     "tests": []
@@ -841,6 +845,42 @@
     "body": {
       "type": "json",
       "raw": "{\n    \"email\": \"iquecode@gmail.com\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "7921083c-d2a3-4af9-9072-d87c7fe815c2",
+    "colId": "ca555009-b16f-4e41-b292-d8d78f2050e4",
+    "containerId": "43a62444-c4a9-4e07-922b-47daaee7a7dc",
+    "name": "Join the Institute",
+    "url": "https://parseapi.back4app.com/functions/change-password",
+    "method": "POST",
+    "sortNum": 75000,
+    "created": "2022-04-22T15:21:23.836Z",
+    "modified": "2022-04-22T15:21:23.836Z",
+    "headers": [
+      {
+        "name": "X-Parse-Application-Id",
+        "value": "{{applicationId}}"
+      },
+      {
+        "name": "X-Parse-REST-API-Key",
+        "value": "{{restApiKey}}"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "X-Parse-Session-Token",
+        "value": "{{token}}"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"email\": \"iquecode@gmail.com\",\n    \"currentPassword\": \"1234\",\n    \"newPassword\": \"12345678\"\n}",
       "form": []
     },
     "tests": []
